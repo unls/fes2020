@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="pt-3 pb-4 grey darken-3">
+    <div class="container">
+        <a href="/" class="text-light">
+            <span class="material-icons">keyboard_arrow_left</span>戻る
+        </a>
+    </div>
+</div>
+<div class="container mt-4">
+    <h3>{{.Title}}</h3>
+    <img src="{{ .Params.image | absURL }}" class="rounded img-fluid">
+    <div class="content">{{.Content}}</div>
+</div>
+{{ end }}

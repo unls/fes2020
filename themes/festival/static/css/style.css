@@ -1,0 +1,109 @@
+.hero {
+  color: #fff;
+  height: 95vh;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height:auto;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.title {
+  margin-top:25vh;
+  font-family: "Open Sans";
+  font-weight: 300;
+  text-align: center;
+  right: 0;
+  left: 0;
+  color: #fff;
+}
+
+.card.large {
+  height: auto;
+}
+
+.material-icons {
+  position: relative;
+  /* 値は調整してください */
+  top: 5px;
+  left: 0;
+}
+i {
+  position:static!important;
+}
+
+.card-action {
+  position: relative!important;
+}
+
+@media screen and (min-width: 320px) {
+  .title h1 {
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .title h1 {
+    font-size: 4rem;
+  }
+}
+
+.sidenav-overlay {
+  opacity:0!important;
+}
+
+nav ul a,
+nav i,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+nav img {
+  margin-top: 0.5rem;
+  height: 3rem;
+  width: auto;
+}
+
+
+/* アイコンサイズ */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+ 
+/* 背景が明るいとき用のアイコン色 */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+ 
+/* 背景が暗いとき用のアイコン色 */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }

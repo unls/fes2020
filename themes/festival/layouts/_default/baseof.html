@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+{{- partial "head.html" . -}}
+{{- partial "header.html" . -}}
+
+<body>
+    <main>
+        {{- block "hero" . }}{{ end }}
+        <div id="content">
+            {{- block "main" . }}{{- end }}
+        </div>
+    </main>
+    {{- partial "footer.html" . -}}
+</body>
+
+</html>

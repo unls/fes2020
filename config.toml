@@ -1,0 +1,56 @@
+baseURL = "https://gohugo.io"
+title = "技術科部文化祭特設サイト"
+author = "Steve Francia"
+copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
+paginate = 3
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+theme = "festival"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "home"
+    name = "ホーム"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "event"
+    name = "展示物"
+    url = "/#event"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "official"
+    name = "公式サイト"
+    url = "https://tclb.cf"
+    weight = 3
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = false
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
