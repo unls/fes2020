@@ -1,13 +1,12 @@
-baseURL = "https://fes.tclb.cf"
+baseURL = "https://gohugo.io"
 title = "技術科部文化祭特設サイト"
-author = "wamo"
+author = "Steve Francia"
+copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
 paginate = 3
-languageCode = "jp"
-DefaultContentLanguage = "jp"
+languageCode = "en"
+DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 theme = "festival"
-
-hasCJKLanguage = true
 
 [menu]
 
