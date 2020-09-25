@@ -1,4 +1,7 @@
-on: push
+on:
+  push:
+    branches:
+      - master
 name: Publish Website
 jobs:
   FTP-Deploy-Action:
@@ -8,12 +11,15 @@ jobs:
     - uses: actions/checkout@v2.1.0
       with:
         fetch-depth: 2
+
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
         hugo-version: latest
+
     - name: Build
-      run: hugo --gc --minify --cleanDestinationDir
+      run: hugo --minify
+
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
