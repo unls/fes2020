@@ -13,7 +13,7 @@ jobs:
       with:
         hugo-version: latest
     - name: Build
-        run: hugo --minify
+      run: hugo --gc --minify --cleanDestinationDir
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
