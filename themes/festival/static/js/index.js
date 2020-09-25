@@ -1,9 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
-  var elems = document.querySelectorAll(".sidenav");
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.sidenav');
   var instances = M.Sidenav.init(elems);
 });
+window.onload = function() {
+  const spinner = document.getElementById('loading');
+  spinner.classList.add('loaded');
+}
 $(function () {
-  $('a[href^="#"]').click(function () {
+  $('a[href^="#event"]').click(function () {
       var speed = 500;
       var href = $(this).attr("href");
       var target = $(href == "#" || href == "" ? 'html' : href);
@@ -12,7 +16,3 @@ $(function () {
       return false;
   });
 });
-window.onload = function() {
-  const spinner = document.getElementById('loading');
-  spinner.classList.add('loaded');
-}
